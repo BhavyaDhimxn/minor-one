@@ -1,70 +1,58 @@
-### 📝 **README.md**
-
-```markdown
-
-# 🐅 Tiger Migration Pattern Prediction
+# 🐅 **Tiger Migration Pattern Prediction**
 
 ## 🚀 **Overview**
-
-This is a Streamlit-based web application that uses **Hidden Markov Models (HMM)** to predict and visualize tiger migration patterns. The application enables conservationists and researchers to analyze tiger movement data, helping them understand migration behaviors for better conservation strategies.
+This is a **Streamlit-based web application** that uses **Hidden Markov Models (HMM)** to predict and visualize tiger migration patterns. The app helps conservationists and researchers analyze tiger movement data, aiding in better conservation strategies by identifying migration behaviors.
 
 ---
 
-## 🛠️ **Features**
+## 🔥 **Features**
 
-- 📊 **Data Upload:** Upload Excel files containing tiger movement data.
+✅ **Data Upload:**  
+- Upload Excel files containing tiger movement data.  
+- Automatically detects and processes numerical data.
 
-- 🤖 **HMM Prediction:** Uses a Hidden Markov Model to predict tiger movement patterns.
+🤖 **HMM Prediction:**  
+- Classifies tiger movement into three states:  
+    - 🟡 **Localized Movement:** Restricted area movement (resting or home range).  
+    - 🔵 **Exploratory Movement:** Traveling or searching for new territory.  
+    - 🔴 **Migration:** Long-distance movement between regions.  
 
-- 🔥 **State Visualization:** 
+📊 **Visualization:**  
+- **Bar Chart:** Displays the frequency of each movement state.  
+- **Finite State Machine (FSM):** Visualizes transitions between states with probabilities.  
 
-    - **Bar chart** showing the frequency of movement patterns.
-
-    - **Finite State Machine (FSM)** to visualize transitions between states.
-
-- 🌄 **Background Image:** Displays a tiger image in the background for aesthetic appeal.
+🌄 **Aesthetic Design:**  
+- Tiger image background for visual appeal.  
 
 ---
 
 ## ⚙️ **How It Works**
 
-1\. **Upload Dataset:** 
+1. **Upload Dataset:**  
+    - Upload an Excel file (`.xlsx`) containing tiger movement data.  
+    - The app automatically detects numerical columns.  
 
-    - You can upload an Excel file (`.xlsx`) containing tiger movement data. 
+2. **Run HMM Prediction:**  
+    - Classifies movements into **three states** using HMM.  
+    - Displays the state frequency and transition probabilities.  
 
-    - The app automatically detects and processes numerical data.
-
-2\. **Prediction with HMM:** 
-
-    - The model classifies the movement into three states:
-
-        - 🟡 **Localized Movement:** Restricted area movement, possibly resting or in home range.
-
-        - 🔵 **Exploratory Movement:** Traveling or searching for new territory.
-
-        - 🔴 **Migration:** Long-distance movement between regions.
-
-3\. **Visualization:**
-
-    - **Bar Chart:** Displays the frequency of each movement state.
-
-    - **FSM Representation:** Shows the transitions between states with probabilities.
+3. **Data Visualization:**  
+    - **Bar Chart:** Shows the distribution of movement states.  
+    - **FSM:** Visualizes transitions between states.
 
 ---
 
-## 📊 **Tech Stack**
+## 💻 **Tech Stack**
 
-- **Frontend:** Streamlit
-
-- **Backend:** Python (HMM implementation using `hmmlearn`)
-
-- **Data Visualization:** `matplotlib`, `networkx`, and `Pandas`
-
-- **Image Processing:** `Pillow (PIL)`
+- **Frontend:** Streamlit  
+- **Backend:** Python (`hmmlearn` for HMM)  
+- **Data Visualization:** `matplotlib`, `networkx`, `pandas`  
+- **Image Processing:** `Pillow (PIL)`  
 
 ---
 
 ## 📦 **Project Structure**
+
 
 ```
 
