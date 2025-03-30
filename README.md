@@ -1,243 +1,243 @@
-\### 📝 \*\*README.md\*\*
+### 📝 **README.md**
 
-\`\`\`markdown
+```markdown
 
-\# 🐅 Tiger Migration Pattern Prediction
+# 🐅 Tiger Migration Pattern Prediction
 
-\## 🚀 \*\*Overview\*\*
+## 🚀 **Overview**
 
-This is a Streamlit-based web application that uses \*\*Hidden Markov Models (HMM)\*\* to predict and visualize tiger migration patterns. The application enables conservationists and researchers to analyze tiger movement data, helping them understand migration behaviors for better conservation strategies.
+This is a Streamlit-based web application that uses **Hidden Markov Models (HMM)** to predict and visualize tiger migration patterns. The application enables conservationists and researchers to analyze tiger movement data, helping them understand migration behaviors for better conservation strategies.
 
-\---
+---
 
-\## 🛠️ \*\*Features\*\*
+## 🛠️ **Features**
 
-\- 📊 \*\*Data Upload:\*\* Upload Excel files containing tiger movement data.
+- 📊 **Data Upload:** Upload Excel files containing tiger movement data.
 
-\- 🤖 \*\*HMM Prediction:\*\* Uses a Hidden Markov Model to predict tiger movement patterns.
+- 🤖 **HMM Prediction:** Uses a Hidden Markov Model to predict tiger movement patterns.
 
-\- 🔥 \*\*State Visualization:\*\*
+- 🔥 **State Visualization:** 
 
-\- \*\*Bar chart\*\* showing the frequency of movement patterns.
+    - **Bar chart** showing the frequency of movement patterns.
 
-\- \*\*Finite State Machine (FSM)\*\* to visualize transitions between states.
+    - **Finite State Machine (FSM)** to visualize transitions between states.
 
-\- 🌄 \*\*Background Image:\*\* Displays a tiger image in the background for aesthetic appeal.
+- 🌄 **Background Image:** Displays a tiger image in the background for aesthetic appeal.
 
-\---
+---
 
-\## ⚙️ \*\*How It Works\*\*
+## ⚙️ **How It Works**
 
-1\. \*\*Upload Dataset:\*\*
+1\. **Upload Dataset:** 
 
-\- You can upload an Excel file (\`.xlsx\`) containing tiger movement data.
+    - You can upload an Excel file (`.xlsx`) containing tiger movement data. 
 
-\- The app automatically detects and processes numerical data.
+    - The app automatically detects and processes numerical data.
 
-2\. \*\*Prediction with HMM:\*\*
+2\. **Prediction with HMM:** 
 
-\- The model classifies the movement into three states:
+    - The model classifies the movement into three states:
 
-\- 🟡 \*\*Localized Movement:\*\* Restricted area movement, possibly resting or in home range.
+        - 🟡 **Localized Movement:** Restricted area movement, possibly resting or in home range.
 
-\- 🔵 \*\*Exploratory Movement:\*\* Traveling or searching for new territory.
+        - 🔵 **Exploratory Movement:** Traveling or searching for new territory.
 
-\- 🔴 \*\*Migration:\*\* Long-distance movement between regions.
+        - 🔴 **Migration:** Long-distance movement between regions.
 
-3\. \*\*Visualization:\*\*
+3\. **Visualization:**
 
-\- \*\*Bar Chart:\*\* Displays the frequency of each movement state.
+    - **Bar Chart:** Displays the frequency of each movement state.
 
-\- \*\*FSM Representation:\*\* Shows the transitions between states with probabilities.
+    - **FSM Representation:** Shows the transitions between states with probabilities.
 
-\---
+---
 
-\## 📊 \*\*Tech Stack\*\*
+## 📊 **Tech Stack**
 
-\- \*\*Frontend:\*\* Streamlit
+- **Frontend:** Streamlit
 
-\- \*\*Backend:\*\* Python (HMM implementation using \`hmmlearn\`)
+- **Backend:** Python (HMM implementation using `hmmlearn`)
 
-\- \*\*Data Visualization:\*\* \`matplotlib\`, \`networkx\`, and \`Pandas\`
+- **Data Visualization:** `matplotlib`, `networkx`, and `Pandas`
 
-\- \*\*Image Processing:\*\* \`Pillow (PIL)\`
+- **Image Processing:** `Pillow (PIL)`
 
-\---
+---
 
-\## 📦 \*\*Project Structure\*\*
+## 📦 **Project Structure**
 
-\`\`\`
+```
 
 📁 Tiger-Migration-Prediction
 
-├── Dockerfile # Docker configuration
+ ├── Dockerfile              # Docker configuration
 
-├── requirements.txt # Python dependencies
+ ├── requirements.txt        # Python dependencies
 
-├── tiger.jpg # Background image
+ ├── tiger.jpg               # Background image
 
-├── app.py # Main Streamlit application script
+ ├── app.py                  # Main Streamlit application script
 
-├── README.md # Documentation
+ ├── README.md               # Documentation
 
-└── data/ # Directory for sample Excel data
+ └── data/                   # Directory for sample Excel data
 
-\`\`\`
+```
 
-\---
+---
 
-\## 🐳 \*\*Run with Docker\*\*
+## 🐳 **Run with Docker**
 
-1\. \*\*Build the Docker Image\*\*
+1\. **Build the Docker Image**
 
-\`\`\`bash
+```bash
 
 docker build -t tiger-migration-app .
 
-\`\`\`
+```
 
-2\. \*\*Run the Docker Container\*\*
+2\. **Run the Docker Container**
 
-\`\`\`bash
+```bash
 
 docker run -p 8501:8501 tiger-migration-app
 
-\`\`\`
+```
 
-3\. \*\*Access the App\*\*
+3\. **Access the App**
 
 Open your browser and navigate to:
 
-\`\`\`
+```
 
 http://localhost:8501
 
-\`\`\`
+```
 
-\---
+---
 
-\## ⚡ \*\*Installation and Running Locally\*\*
+## ⚡ **Installation and Running Locally**
 
-1\. \*\*Clone the Repository\*\*
+1\. **Clone the Repository**
 
-\`\`\`bash
+```bash
 
-git clone
+git clone <repository_url>
 
 cd Tiger-Migration-Prediction
 
-\`\`\`
+```
 
-2\. \*\*Create a Virtual Environment\*\*
+2\. **Create a Virtual Environment**
 
-\`\`\`bash
+```bash
 
 python3 -m venv venv
 
-source venv/bin/activate # For Windows: venv\\Scripts\\activate
+source venv/bin/activate  # For Windows: venv\Scripts\activate
 
-\`\`\`
+```
 
-3\. \*\*Install Dependencies\*\*
+3\. **Install Dependencies**
 
-\`\`\`bash
+```bash
 
 pip install -r requirements.txt
 
-\`\`\`
+```
 
-4\. \*\*Run the Streamlit App\*\*
+4\. **Run the Streamlit App**
 
-\`\`\`bash
+```bash
 
 streamlit run app.py
 
-\`\`\`
+```
 
-\---
+---
 
-\## 📊 \*\*Usage Instructions\*\*
+## 📊 **Usage Instructions**
 
 1\. Upload a dataset in Excel format.
 
 2\. Select the desired sheet containing tiger movement data.
 
-3\. Click on \*\*"Run Migration Prediction"\*\*.
+3\. Click on **"Run Migration Prediction"**.
 
 4\. View the predicted movement patterns and visualize them through:
 
-\- \*\*Bar chart\*\*
+    - **Bar chart**
 
-\- \*\*Finite State Machine (FSM)\*\*
+    - **Finite State Machine (FSM)**
 
-\---
+---
 
-\## 🔥 \*\*Sample Dataset\*\*
+## 🔥 **Sample Dataset**
 
-\- You can test the application using sample Excel files in the \`data/\` directory.
+- You can test the application using sample Excel files in the `data/` directory.
 
-\---
+---
 
-\## 🛠️ \*\*Dependencies\*\*
+## 🛠️ **Dependencies**
 
-\- \`streamlit\`
+- `streamlit`
 
-\- \`pandas\`
+- `pandas`
 
-\- \`numpy\`
+- `numpy`
 
-\- \`hmmlearn\`
+- `hmmlearn`
 
-\- \`matplotlib\`
+- `matplotlib`
 
-\- \`networkx\`
+- `networkx`
 
-\- \`pillow\`
+- `pillow`
 
-\---
+---
 
-\## 🐛 \*\*Troubleshooting\*\*
+## 🐛 **Troubleshooting**
 
-\- \*\*Blank Screen Issue:\*\* Ensure the Docker container exposes the app on \`0.0.0.0\` and the port is mapped correctly.
+- **Blank Screen Issue:** Ensure the Docker container exposes the app on `0.0.0.0` and the port is mapped correctly.
 
-\- \*\*Image Not Loading:\*\* Verify the path to \`tiger.jpg\` in the \`Dockerfile\` and \`app.py\`.
+- **Image Not Loading:** Verify the path to `tiger.jpg` in the `Dockerfile` and `app.py`.
 
-\- \*\*Missing Libraries:\*\* Install missing dependencies using:
+- **Missing Libraries:** Install missing dependencies using:
 
-\`\`\`bash
+```bash
 
 pip install -r requirements.txt
 
-\`\`\`
+```
 
-\---
+---
 
-\## 📝 \*\*Contributing\*\*
+## 📝 **Contributing**
 
-\- Feel free to fork the repository and submit pull requests.
+- Feel free to fork the repository and submit pull requests.
 
-\- For major changes, open an issue first to discuss the changes.
+- For major changes, open an issue first to discuss the changes.
 
-\---
+---
 
-\## 💡 \*\*Acknowledgments\*\*
+## 💡 **Acknowledgments**
 
-\- Inspired by conservation efforts to track and protect endangered tigers.
+- Inspired by conservation efforts to track and protect endangered tigers.
 
-\- Developed using Streamlit and HMM algorithms.
+- Developed using Streamlit and HMM algorithms.
 
-\`\`\`
+```
 
-✅ This \`README.md\` covers:
+✅ This `README.md` covers:
 
-\- Project overview
+- Project overview
 
-\- Features
+- Features
 
-\- Installation steps (both locally and with Docker)
+- Installation steps (both locally and with Docker)
 
-\- Usage instructions
+- Usage instructions
 
-\- Troubleshooting tips
+- Troubleshooting tips
 
-\- License and acknowledgments
+- License and acknowledgments
